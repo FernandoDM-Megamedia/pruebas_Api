@@ -7,6 +7,21 @@ import Axios from 'axios';
 const hotelListUrl = '/api/hotels';
 const cityListUrl = '/api/cities';
 
+/* TODO .-  antonio, aqui estan las dudas en el bloque saveHotel
+
+en el video   1.8 Demos - Demo Put
+Vamos a ver como modificar un hotel interactuando con una API Rest usando Fetch y Axios.
+
+Vídeo 1.7 - Demo Put
+1.7 - Demo Put
+
+se comenta este tema 
+
+  * el primer codigo comentado cunado se ejecuta da error
+  * el segundo bloque da erro no retorna a la pagina anterior pero si modifica
+  * 
+*/
+
 export const getHotel = async (id: string): Promise<Hotel> => {
   // return mockHotelCollection.find((h) => h.id === id);
   const response  = await fetch(`${hotelListUrl}/${id}`);
