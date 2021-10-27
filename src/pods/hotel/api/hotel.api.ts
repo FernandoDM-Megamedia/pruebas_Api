@@ -15,11 +15,11 @@ Vamos a ver como modificar un hotel interactuando con una API Rest usando Fetch 
 Vídeo 1.7 - Demo Put
 1.7 - Demo Put
 
-se comenta este tema 
+se comenta este tema
 
   * el primer codigo comentado cunado se ejecuta da error
   * el segundo bloque da erro no retorna a la pagina anterior pero si modifica
-  * 
+  *
 */
 
 export const getHotel = async (id: string): Promise<Hotel> => {
@@ -45,7 +45,7 @@ export const getCities = async (): Promise<Lookup[]> => {
 export const saveHotel = async (hotel: Hotel): Promise<boolean> => {
   // return true;
 
-  // aqui da error y no lo hace 
+  // aqui da error y no lo hace
   // if (hotel.id) {
   //   //put - una actualizacion
   //   await fetch(`${hotelListUrl}/${hotel.id}`, {
@@ -67,4 +67,5 @@ export const saveHotel = async (hotel: Hotel): Promise<boolean> => {
   } else {
     // post
   }
+  return true
 };
